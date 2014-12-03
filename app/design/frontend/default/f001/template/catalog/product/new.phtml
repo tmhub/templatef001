@@ -29,7 +29,7 @@ $_columnsCount = 4;
 if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
 <div class="box recently">
     <div class="category-head">
-<h2 class="subtitle"><?php echo $this->__('New Products') ?></h2>
+        <h2 class="subtitle"><?php echo $this->__('New Products') ?></h2>
     </div>
     <?php $i=0; foreach ($_products->getItems() as $_product): ?>
       <?php if ($i++%$_columnsCount==0): ?>
