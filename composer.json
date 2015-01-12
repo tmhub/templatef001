@@ -21,27 +21,5 @@
             "type": "composer",
             "url": "http://tmhub.github.io/packages/"
         }
-    ],
-    "extra": {
-        "map": [
-            ["app/code/local/TM/Ajax","app/code/local/TM/Ajax"],
-            ["app/code/local/TM/Featured","app/code/local/TM/Featured"],
-            ["app/code/local/TM/Templatef001","app/code/local/TM/Templatef001"],
-            ["app/design/frontend/default/f001","app/design/frontend/default/f001"],
-            ["app/etc/modules/TM_Ajax.xml","app/etc/modules/TM_Ajax.xml"],
-            ["app/etc/modules/TM_Featured.xml","app/etc/modules/TM_Featured.xml"],
-            ["app/etc/modules/TM_Templatef001.xml","app/etc/modules/TM_Templatef001.xml"],
-            ["skin/frontend/default/f001","skin/frontend/default/f001"],
-            ["skin/frontend/default/f001_green","skin/frontend/default/f001_green"],
-            ["skin/frontend/default/f001_grey","skin/frontend/default/f001_grey"],
-            ["skin/frontend/default/f001_orange","skin/frontend/default/f001_orange"],
-            ["skin/frontend/default/f001_pink","skin/frontend/default/f001_pink"],
-            ["skin/frontend/default/f001_red","skin/frontend/default/f001_red"],
-            ["skin/frontend/default/f001_sea_green","skin/frontend/default/f001_sea_green"],
-            ["skin/frontend/default/f001_silver","skin/frontend/default/f001_silver"],
-            ["skin/frontend/default/f001_violet","skin/frontend/default/f001_violet"],
-            ["skin/frontend/default/f001_yellow","skin/frontend/default/f001_yellow"]
-        ],
-        "changelog": ""
-    }
+    ]
 }
