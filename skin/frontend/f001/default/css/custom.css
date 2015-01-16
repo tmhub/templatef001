@@ -34,12 +34,12 @@ a {color:#1E7EC8; text-decoration:underline; }
 .block-layered-nav{}
 .block-layered-nav .block-title{ padding:0px; }
 
-.block-layered-nav{padding:5px 10px}
+.block-layered-nav{padding:5px}
 .block-layered-nav .block-subtitle,
 .block-layered-nav .block-content{background:none; border:0px solid #ddd}
 .block-layered-nav dt{padding:7px 10px 0 7px}
 .block-layered-nav dd{background:url("../images/narrow_by_dd_bg.gif") repeat-x scroll 0 100% transparent; padding:0 12px 0.8em}
-.block-layered-nav dd li{line-height:1.3em; margin-bottom:0; padding:4px 4px 4px 8px}
+.block-layered-nav dd li{line-height:1.3em; margin-bottom:0; padding:4px 4px 4px 0}
 .block-layered-nav dd li a{text-decoration:none; color: #5A5A5A;}
 .block-layered-nav dd li a:hover { text-decoration: underline; }
 
