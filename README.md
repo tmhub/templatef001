@@ -23,3 +23,19 @@ modman clone git@github.com:tmhub/templatef001.git
 4. Click on `Manage` link.
 5. Select the store(s) where you wish to install theme.
 6. Press `Run` button.
+
+## Configuration
+#### Change color theme
+1. Navigate to `System > Configuration > Design`.
+2. Make sure that `Package > Current Package Name` is set to `f001`.
+3. Set the color theme with `Themes > Skin (Images / CSS)` option:
+    - default
+    - green
+    - grey
+    - orange
+    - pink
+    - red
+    - sea_green
+    - silver
+    - violet
+    - yellow
