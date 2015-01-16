@@ -15,16 +15,16 @@ a {color:#1E7EC8; text-decoration:underline; }
 .header .quick-access li.first{background:none repeat scroll 0 0 transparent;     padding-left:0}
 .main-container{background:url(../images/container.png) no-repeat 0 100%;     margin:0 auto; padding-bottom:30px; width:978px}
 .header .form-search label{display:none}
-.header .form-search button.button{width:20px}
-.header .form-search button.button span { background: none; }
+.header .form-search button.button{ height:27px; width:25px; }
+.header .form-search button.button span { background: none; box-shadow: none; }
 
 .page-title  {background:transparent url(../images/page_head_bg.gif) repeat-x scroll 0 100%; border:1px solid #EAEAEA; margin-bottom:7px; }
 .page-title  h1 {color:#459B06; font-size:1.4em; font-weight:normal; line-height:1.3em; margin:0; max-width:100%; overflow:hidden; padding:5px 0 4px 10px; }
 
 .block-content a{}
 .block-subscribe{background:url("../images/base_mini_alt_bg.gif") repeat-x 0 0 #005E89;     border:medium none; color:#FFF; min-height:124px}
-.block-subscribe .block-title strong{background:none}
-.block-subscribe .block-title strong span{background-position:-370px -90px; color:#FFF}
+.block-subscribe .block-title strong{ background:none; padding: 0;}
+.block-subscribe .block-title strong span{background:none; color:#FFF; padding-left: 0;}
 .block-subscribe label{font-weight:bold; color:#FFF}
 .block-subscribe .actions{margin-top:15px}
 .block-cart .subtotal{background:#eee}
@@ -47,72 +47,61 @@ h3.product-name {color:#0A263C; line-height:1.5em; margin-bottom:0.4em; font-siz
 .products-grid h5 a{color:#007ed3; text-decoration:none}
 .products-grid .ratings .amount{display:none}
 .products-grid .actions{}
+
 /*************************Buttons*************************/
-button.button{background:none; border:0px solid #000}
+button.button { background: none; border: none; }
+button.button span span {
+    border-radius: 6px;
+    color: #fff;
+    padding: 3px 11px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 0.3);
+    background: #707070;
+    background: -moz-linear-gradient(top, #707070 0%, #404040 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707070), color-stop(100%,#404040));
+    background: -webkit-linear-gradient(top, #707070 0%,#404040 100%);
+    background: -o-linear-gradient(top, #707070 0%,#404040 100%);
+    background: -ms-linear-gradient(top, #707070 0%,#404040 100%);
+    background: linear-gradient(to bottom, #707070 0%,#404040 100%);
+}
+button.button:active span span { box-shadow: inset 0 3px 2px -2px rgba(0, 0, 0, 0.7); }
 
-.button span{background:url("../images/button.gif") no-repeat 100% -28px;     border:0 none; color:#FFF; font:bold 12px arial,sans-serif !important;     margin:0; overflow:visible; padding:0 10px 0 0; text-align:center; vertical-align:middle;     width:auto}
-.button:hover span{background:url("../images/button.gif") no-repeat 100% -84px}
-.button span span{background:url("../images/button.gif") no-repeat 0 0;     display:block; height:26px; line-height:25px !important; padding:0 0 0 10px;     white-space:nowrap}
-.button:hover span span{background:url("../images/button.gif") no-repeat 0 -56px}
-
-/**ALT BTNS**/
-.grey-box .button span,
-.cart-table .btn-continue span,
-.cart-table .btn-update span,
-.cart-table .btn-empty span,
-.cart .discount button span,
-.cart .shipping button span,
-.block-compare button.button span,
-.block-poll button.button span,
-.block-login .actions button.button span,
-.product-view .box-tags .form-add button.button span,
-.multiple-checkout .title-buttons button.button span,
-#multiship-addresses-table tfoot button.button span{    background:url("../images/button.gif") no-repeat 100% -142px;     color:#295E86; height:27px}
-.grey-box .button:hover span,
-.cart-table .btn-continue:hover span,
-.cart-table .btn-update:hover span,
-.cart-table .btn-empty:hover span,
-.cart .discount button:hover span,
-.cart .shipping button:hover span,
-.block-compare button.button:hover span,
-.block-poll button.button:hover span,
-.block-login .actions button.button:hover span,
-.product-view .box-tags .form-add button.button:hover span,
-.multiple-checkout .title-buttons button.button:hover span,
-#multiship-addresses-table tfoot button.button:hover span{    background:url("../images/button.gif") no-repeat 100% -200px}
-.grey-box .button span span,
-.cart-table .btn-continue  span span,
-.cart-table .btn-update span span,
+/* Alt buttons */
 .cart-table .btn-empty span span,
-.cart .discount button span span,
-.cart .shipping button span span,
-.block-compare button.button span span,
-.block-poll button.button span span,
-.block-login .actions button.button span span,
-.product-view .box-tags .form-add button.button span span,
-.multiple-checkout .title-buttons button.button span span,
-#multiship-addresses-table tfoot button.button span  span{    background:url("../images/button.gif") no-repeat 0 -113px;     display:block; height:26px; line-height:25px !important; padding:0 0 0 10px !important;     white-space:nowrap; border:0}
-.grey-box .button:hover span span,
-.cart-table .btn-continue:hover span span,
-.cart-table .btn-update:hover span span,
-.cart-table .btn-empty:hover span span,
-.cart .discount button:hover span span,
-.cart .shipping button:hover span span,
-.block-compare button.button:hover span span,
-.block-poll button.button:hover span span,
-.block-login .actions button.button:hover span span,
-.product-view .box-tags .form-add button.button:hover span span,
-.multiple-checkout .title-buttons button.button:hover span span,
-#multiship-addresses-table tfoot button.button:hover span span{    background:url("../images/button.gif") no-repeat 0 -171px}
+.cart-table .btn-continue span span,
+.cart-table .btn-update span span,
+.block-subscribe button.button span span {
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    color:#295E86;
+    background: #f6f6f6;
+    background: -moz-linear-gradient(top, #f6f6f6 0%, #d3d3d3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#d3d3d3));
+    background: -webkit-linear-gradient(top, #f6f6f6 0%,#d3d3d3 100%);
+    background: -o-linear-gradient(top, #f6f6f6 0%,#d3d3d3 100%);
+    background: -ms-linear-gradient(top, #f6f6f6 0%,#d3d3d3 100%);
+    background: linear-gradient(to bottom, #f6f6f6 0%,#d3d3d3 100%);
+}
+.cart-table .btn-empty:active span span,
+.cart-table .btn-continue:active span span,
+.cart-table .btn-update:active span span,
+.block-subscribe button.button:active span span { box-shadow: inset 0 3px 2px -2px rgba(0, 0, 0, 0.3); }
 
-.block-subscribe button.button span{background:url("../images/button.gif") no-repeat 100% -257px}
-.block-subscribe button.button span span{background:url("../images/button.gif") no-repeat 0 -228px; color:#295e86}
-
-.block-subscribe button.button:hover span{background:url("../images/button.gif") no-repeat 100% -315px}
-.block-subscribe button.button:hover span span{background:url("../images/button.gif") no-repeat 0 -286px; color:#295e86}
-
-button.btn-checkout span span{padding:0 16px}
+/* AjaxPro More products button */
+#ajaxpro-scrolling-button { margin: 10px auto !important; }
+#ajaxpro-scrolling-button span span {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: #b2b2b2;
+    background: -moz-linear-gradient(top, #b2b2b2 0%, #939393 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2b2b2), color-stop(100%,#939393));
+    background: -webkit-linear-gradient(top, #b2b2b2 0%,#939393 100%);
+    background: -o-linear-gradient(top, #b2b2b2 0%,#939393 100%);
+    background: -ms-linear-gradient(top, #b2b2b2 0%,#939393 100%);
+    background: linear-gradient(to bottom, #b2b2b2 0%,#939393 100%);
+}
+#ajaxpro-scrolling-button:active span span { box-shadow: inset 0 3px 2px -2px rgba(0, 0, 0, 0.3); }
 /****************************End Buttons***************************/
+
 .footer-container{background:url("../images/footer_bg.gif") repeat-x 0 0; margin-top:25px}
 .footer{margin:0 auto; padding:15px 10px 4em; text-align:left; width:958px}
 
