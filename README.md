@@ -13,6 +13,7 @@ deploy the module with command line:
 ```bash
 cd /path/to/magento
 modman clone git@github.com:tmhub/core.git
+modman clone git@github.com:tmhub/catalog-configurable-swatches.git
 modman clone git@github.com:tmhub/templatef001.git
 ```
 
